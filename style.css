@@ -1,0 +1,24 @@
+.navy {
+    background-color: rgb(199, 47, 47);
+}
+.cent {
+    text-align: center;
+}
+.br {
+    height: 15vw;
+    padding: 0vw;
+}
+.bn2 {
+    height: 5vw;
+    padding: 0vw;
+    color: white;
+    width: 5vw;
+    margin: 1vw;
+}
+.division {
+    border: 2px solid black;
+    padding: 2vw;
+    margin: 2vw;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+}
