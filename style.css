@@ -22,3 +22,57 @@
     margin-bottom: 0vw;
     margin-top: 0vw;
 }
+.divisioneast {
+    border: 2px solid black;
+    padding: 2vw;
+    margin: 2vw;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+    color: white;
+    background-color:rgb(199, 47, 47);
+}
+.divisionnorth {
+    border: 2px solid black;
+    padding: 2vw;
+    margin: 2vw;
+    margin-bottom: 0vw;
+    margin-top: 0vw;
+    color: white;
+    background-color:rgb(199, 47, 47);
+}
+.north {
+    width: 45%;
+}
+.t1 {
+    width: 4vw;
+}
+.t2 {
+    width: 5vw;
+}
+.t3 {
+    width: 4vw;
+}
+.t4 {
+    width: 5vw;
+}
+.t5 {
+    width: 5vw;
+}
+.t6 {
+    width: 5vw;
+}
+.t7 {
+    width: 5vw;
+}
+.t8 {
+    width: 5vw;
+}
+
+
+
+
+
+
+.inv {
+    color: white;
+}
