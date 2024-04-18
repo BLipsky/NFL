@@ -21,6 +21,7 @@
     margin: 2vw;
     margin-bottom: 0vw;
     margin-top: 0vw;
+    height: 8vw;
 }
 .divisionafc {
     border: 2px solid black;
@@ -102,7 +103,9 @@
     width: 6vw;
 }
 
-
+.record {
+    display: inline;
+}
 
 .inv {
     color: white;

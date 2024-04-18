@@ -3,6 +3,11 @@ let gameLose = 0;
 let gameTie = 0;
 
 function autoFill() {
+  // Check if total games reached 17
+  if (gameWin + gameLose + gameTie === 17) {
+    return; // Exit the function if 17 games already simulated
+  }
+
   let autoScore = Math.random();
 
   if (autoScore < 0.45) {
@@ -12,10 +17,26 @@ function autoFill() {
   } else {
     gameTie++;
   }
+  
+  // Update HTML elements with the new values
+  document.getElementById('gameWin').textContent = gameWin;
+  document.getElementById('gameLose').textContent = gameLose;
+  document.getElementById('gameTie').textContent = gameTie;
 }
 
-for (let i = 0; i < 17; i++) {
-  autoFill();
-}
+function fillAllGames() {
+  // Reset game counts
+  gameWin = 0;
+  gameLose = 0;
+  gameTie = 0;
 
-console.log("Wins:", gameWin, "Losses:", gameLose, "Ties:", gameTie);
+  // Simulate all games
+  for (let i = 0; i < 17; i++) {
+    autoFill();
+  }
+  
+  // Update HTML elements with the final values
+  document.getElementById('gameWin').textContent = gameWin;
+  document.getElementById('gameLose').textContent = gameLose;
+  document.getElementById('gameTie').textContent = gameTie;
+}
