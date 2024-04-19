@@ -1,11 +1,12 @@
 .navy {
     background-color: rgb(199, 47, 47);
+    border-bottom: .5vw solid rgb(231, 215, 123);
 }
 .cent {
     text-align: center;
 }
 .br {
-    height: 15vw;
+    height: 10vw;
     padding: 0vw;
 }
 .bn2 {
@@ -21,7 +22,7 @@
     margin: 2vw;
     margin-bottom: 0vw;
     margin-top: 0vw;
-    height: 8vw;
+    height: 9vw;
 }
 .divisionafc {
     border: 2px solid black;
@@ -52,6 +53,42 @@
 }
 .south {
     width: 45%;
+}
+.east {
+    width: 45%;
+}
+.west {
+    width: 45%;
+}
+
+.score {
+    font-weight: 600;
+    font-size: 1.25vw;
+}
+  
+  .name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  
+  .team-name {
+    margin-right: 1vw; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    font-size: 2vw;
+  }
+  .align {
+    text-align: center;
+  }
+.sim {
+    border: .1vw solid black;
+    border-radius: 2vw;
+    background-color: white;
+    width: 15vw;
+    text-align: center;
 }
 
 .t1 {
@@ -105,6 +142,9 @@
 
 .record {
     display: inline;
+    width: 100vw;
+    height: 1vw;
+    
 }
 
 .inv {
