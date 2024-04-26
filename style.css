@@ -48,17 +48,13 @@
 .navs {
     background-color:rgb(22, 67, 135);
 }
-.north {
+.north, .east, .south, .west {
+    float: left;
     width: 45%;
 }
-.south {
-    width: 45%;
-}
-.east {
-    width: 45%;
-}
-.west {
-    width: 45%;
+
+.east, .west {
+    clear: left;
 }
 
 .score {
