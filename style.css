@@ -1,6 +1,6 @@
 .navy {
     background-color: rgb(199, 47, 47);
-    border-bottom: .5vw solid rgb(231, 215, 123);
+    border-bottom: .5vw solid rgb(234, 211, 84);
 }
 .cent {
     text-align: center;
@@ -18,29 +18,27 @@
 }
 .division {
     border: 2px solid black;
-    padding: 2vw;
+    padding: 1vw;
     margin: 2vw;
     margin-bottom: 0vw;
     margin-top: 0vw;
-    height: 9vw;
+    height: 10vw;
 }
 .divisionafc {
     border: 2px solid black;
     padding: 2vw;
-    margin: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
     margin-bottom: 0vw;
-    margin-top: 0vw;
+    margin-top: 5vw;
     color: white;
     background-color:rgb(199, 47, 47);
     text-align: center;
-
+    text-shadow: 0vw 0vw 1vw rgb(234, 211, 84);
 }
 .divisionnfc {
     border: 2px solid black;
     padding: 2vw;
-    margin: 2vw;
-    margin-bottom: 0vw;
-    margin-top: 0vw;
     color: white;
     background-color:rgb(22, 67, 135);
     text-align: center;
@@ -50,7 +48,7 @@
 }
 .north, .east, .south, .west {
     float: left;
-    width: 45%;
+    width: 50%;
 }
 
 .east, .west {
@@ -83,9 +81,9 @@
     background-color: white;
     width: 15vw;
     text-align: center;
+    margin-top: 1vw;
 }
 .b {
-    margin-left: 9vw;
     text-align: center;
 }
 .t1 {
@@ -113,13 +111,13 @@
     width: 5vw;
 }
 .t9 {
-    width: 5vw;
+    width: 4vw;
 }
 .t10 {
     width: 5vw;
 }
 .t11 {
-    width: 5vw;
+    width: 4vw;
 }
 .t12 {
     width: 5vw;
@@ -128,13 +126,13 @@
     width: 5vw;
 }
 .t14 {
-    width: 6vw;
-}
-.t15 {
     width: 5vw;
 }
+.t15 {
+    width: 4vw;
+}
 .t16 {
-    width: 6vw;
+    width: 4vw;
 }
 
 .record {
