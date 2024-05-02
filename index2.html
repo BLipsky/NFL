@@ -40,7 +40,7 @@
     <link href="https://fonts.cdnfonts.com/css/chomsky" rel="stylesheet" />
   </head>
   <body>
-    <nav class="navbar navs cent">
+    <nav class="navbar navy2 navs cent">
       <div class="container-fluid">
         <a class="nav-link" href="index.html"
           ><img class="bn2" src="left.svg"
@@ -50,120 +50,398 @@
       </div>
     </nav>
 
-    <br /><br /><br />
-    <div class="container">
-      <div class="row">
-        <div class="south">
-          <div class="divisionnfc"><h1>NFC North</h1></div>
-          <div class="division">
-            <img class="t1" src="NFC North/North1.png" /><span class="inv"
-              >.......</span
-            >
-            Lions
-          </div>
-          <div class="division">
-            <img class="t2" src="NFC North/North2.png" /><span class="inv"
-              >......</span
-            >
-            Packers
-          </div>
-          <div class="division">
-            <img class="t3" src="NFC North/North3.png" /><span class="inv"
-              >........</span
-            >
-            Vikings
-          </div>
-          <div class="division">
-            <img class="t4" src="NFC North/North4.png" /><span class="inv"
-              >.....</span
-            >
-            Bears
-          </div>
-        </div>
-        <br /><br /><br />
-        <div class="south">
-          <div class="divisionnfc"><h1>NFC East</h1></div>
-          <div class="division">
-            <img class="t5" src="NFC East/East1.png" /><span class="inv"
-              >......</span
-            >Eagles
-          </div>
-          <div class="division">
-            <img class="t6" src="NFC East/East2.png" /><span class="inv"
-              >......</span
-            >Cowboys
-            
-          </div>
-          <div class="division">
-            <img class="t7" src="NFC East/East3.png" /><span class="inv"
-              >......</span
-            >Giants
-          </div>
-          <div class="division">
-            <img class="t8" src="NFC East/East4.png" /><span class="inv"
-              >.....</span
-            >Commanders
-          </div>
-        </div>
-      </div>
-      <br /><br /><br />
-      <div class="row">
-        <div class="south">
-          <div class="divisionnfc"><h1>NFC South</h1></div>
-          <div class="division">
-            <img class="t9" src="NFC South/South1.png" /><span class="inv"
-              >.......</span
-            >Buccaneers
-          </div>
-          <div class="division">
-            <img class="t10" src="NFC South/South2.png" /><span class="inv"
-              >......</span
-            >Saints
-          </div>
-          <div class="division">
-            <img class="t11" src="NFC South/South3.png" /><span class="inv"
-              >......</span
-            >Falcons
-          </div>
-          <div class="division">
-            <img class="t12" src="NFC South/South4.png" /><span class="inv"
-              >.....</span
-            >
-            Panthers
-          </div>
-        </div>
-        <div class="south">
-          <div class="divisionnfc"><h1>NFC West</h1></div>
-          <div class="division">
-            <img class="t13" src="NFC West/West1.png" /><span class="inv"
-              >.......</span
-            >49ers
-          </div>
-          <div class="division">
-            <img class="t14" src="NFC West/West2.png" /><span class="inv"
-              >......</span
-            >Rams
-          </div>
-          <div class="division">
-            <img class="t15" src="NFC West/West3.png" /><span class="inv"
-              >......</span
-            >Seahawks
-          </div>
-          <div class="division">
-            <img class="t16" src="NFC West/West4.png" /><span class="inv"
-              >.....</span
-            >
-            Cardinals
-          </div>
-        </div>
-      </div>
-    </div>
+   
+    <br /><br /><br/>
+    <div class="hold">
+        <button class="simAll2" onclick="fillAllGames991()">Simulate Every Record</button>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <div class="container b">
+                    <div class="conference-container">
+                        <div class="row">
+                            <div class="division-container north">
+                                <div class="divisionnfc">
+                                    <h1>NFC North</h1>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t17 team-logo" src="NFC North/North1.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Lions <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin17" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose17" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie17" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+
+                                            <button class="sim2" onclick="fillAllGames17()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t18 team-logo" src="NFC North/North2.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Packers <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin18" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose18" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie18" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames18()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t19 team-logo" src="NFC North/North3.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Vikings <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin19" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose19" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie19" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames19()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t20 team-logo" src="NFC North/North4.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Bears <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin20" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose20" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie20" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames20()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="division-container east">
+                                <div class="divisionnfc">
+                                    <h1>NFC East</h1>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t21 team-logo" src="NFC East/East1.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Eagles <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin21" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose21" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie21" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames21()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t22 team-logo" src="NFC East/East2.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden;">
+                                                Cowboys <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin22" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose22" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie22" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames22()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t23 team-logo" src="NFC East/East3.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Giants <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin23" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose23" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie23" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames23()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t24 team-logo mt" src="NFC East/East4.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0; padding: 0;">
+                                            <div class="team-name lefts"
+                                                style="margin-left: 0vw; white-space: nowrap; overflow: hidden;">
+                                                Commanders <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin24" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose24" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie24" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames24()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="division-container south">
+                                <div class="divisionnfc">
+                                    <h1>NFC South</h1>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t25 team-logo" src="NFC South/South1.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name lefts"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Buccaneers <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin25" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose25" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie25" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames25()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t26 team-logo" src="NFC South/South2.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Saints <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin26" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose26" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie26" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames26()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t27 team-logo" src="NFC South/South3.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Falcons <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin27" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose27" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie27" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames27()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t28 team-logo" src="NFC South/South4.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Panthers <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin28" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose28" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie28" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames28()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="division-container west">
+                                <div class="divisionnfc">
+                                    <h1>NFC West</h1>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t29 team-logo" src="NFC West/West1.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                49ers <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin29" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose29" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie29" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames29()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t30 team-logo" src="NFC West/West2.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Rams <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin30" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose30" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie30" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                        <br>    <button class="sim2" onclick="fillAllGames30()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t31 team-logo" src="NFC West/West3.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name lefts"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                                Seahawks <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin31" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose31" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie31" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                           <br> <button class="sim2" onclick="fillAllGames31()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <div class="row">
+                                        <div class="col-3">
+                                            <img class="t32 team-logo" src="NFC West/West4.png" />
+                                        </div>
+                                        <div class="name col-9"
+                                            style="display: flex; align-items: center; margin-bottom: 0">
+                                            <div class="team-name"
+                                                style="margin-right: 1vw; white-space: nowrap; overflow: hidden;">
+                                                Cardinals <span class="inv"></span>
+                                            </div>
+                                            <span class="score">
+                                                <input class="scr" id="gameWin32" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameLose32" oninput="validateInput(this)"></input> -
+                                                <input class="scr" id="gameTie32" oninput="validateInput(this)"></input>
+                                            </span>
+                                        </div>
+                                        <span class="align">
+                                            <button class="sim2" onclick="fillAllGames32()">Simulate Games</button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+</body>
+
 </html>

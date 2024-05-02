@@ -2,6 +2,10 @@
     background-color: rgb(199, 47, 47);
     border-bottom: .5vw solid rgb(234, 211, 84);
 }
+.navy2 {
+    background-color: rgb(199, 47, 47);
+    border-bottom: .5vw solid rgb(234, 207, 54);
+}
 .cent {
     text-align: center;
 }
@@ -19,15 +23,16 @@
 .division {
     border: 2px solid black;
     padding: 1vw;
-    margin: 2vw;
+    margin: 1vw;
     margin-bottom: 0vw;
     margin-top: 0vw;
     height: 10vw;
+    width: 90%;
 }
 .divisionafc {
     border: 2px solid black;
     padding: 2vw;
-    margin-left: 2vw;
+    margin-left: 1vw;
     margin-right: 2vw;
     margin-bottom: 0vw;
     margin-top: 5vw;
@@ -35,13 +40,20 @@
     background-color:rgb(199, 47, 47);
     text-align: center;
     text-shadow: 0vw 0vw 1vw rgb(234, 211, 84);
+    width: 90%;
 }
 .divisionnfc {
     border: 2px solid black;
     padding: 2vw;
+    margin-left: 1vw;
+    margin-right: 2vw;
+    margin-bottom: 0vw;
+    margin-top: 5vw;
     color: white;
     background-color:rgb(22, 67, 135);
     text-align: center;
+    text-shadow: 0vw 0vw 1vw rgb(234, 211, 84);
+    width: 90%;
 }
 .navs {
     background-color:rgb(22, 67, 135);
@@ -59,7 +71,11 @@
     font-weight: 600;
     font-size: 1.25vw;
 }
-  
+.scr {
+    width: 25px;
+    text-align: center;
+    font-size: small;
+}
   .name {
     display: flex;
     align-items: center;
@@ -72,17 +88,56 @@
     font-weight: 500;
     font-size: 2vw;
   }
+  .hold {
+    text-align: center;
+  }
   .align {
     text-align: center;
   }
 .sim {
-    border: .1vw solid black;
+    border: .1vw solid rgb(234, 211, 84);
     border-radius: 2vw;
-    background-color: white;
+    background-color:rgb(199, 47, 47);
     width: 15vw;
     text-align: center;
     margin-top: 1vw;
+    color: white;
+    text-shadow: 0vw 0vw .5vw rgb(234, 211, 84);
 }
+.simAll {
+    border: .1vw solid rgb(234, 211, 84);
+    border-radius: 20vw;
+    background-color:rgb(199, 47, 47);
+    width: 25vw;
+    text-align: center;
+    color: white;
+    text-shadow: 0vw 0vw .5vw rgb(234, 211, 84);
+    font-size: large;
+    font-weight: 700;
+    padding: 1vw;
+}  
+.sim2 {
+    border: .1vw solid rgb(234, 211, 84);
+    border-radius: 2vw;
+    background-color:rgb(22, 67, 135);
+    width: 15vw;
+    text-align: center;
+    margin-top: 1vw;
+    color: white;
+    text-shadow: 0vw 0vw .5vw rgb(234, 211, 84);
+}
+.simAll2 {
+    border: .1vw solid rgb(234, 211, 84);
+    border-radius: 20vw;
+    background-color:rgb(22, 67, 135);
+    width: 25vw;
+    text-align: center;
+    color: white;
+    text-shadow: 0vw 0vw .5vw rgb(234, 211, 84);
+    font-size: large;
+    font-weight: 700;
+    padding: 1vw;
+}  
 .b {
     text-align: center;
 }
@@ -132,7 +187,55 @@
     width: 4vw;
 }
 .t16 {
+    width: 5vw;
+}
+.t17 {
     width: 4vw;
+}
+.t18 {
+    width: 4vw;
+}
+.t19 {
+    width: 3.75vw;
+}
+.t20 {
+    width: 3.75vw;
+}
+.t21 {
+    width: 4vw;
+}
+.t22 {
+    width: 4vw;
+}
+.t23 {
+    width: 3.5vw;
+}
+.t24 {
+    width: 4vw;
+}
+.t25 {
+    width: 4vw;
+}
+.t26 {
+    width: 4vw;
+}
+.t27 {
+    width: 7vw;
+}
+.t28 {
+    width: 5vw;
+}
+.t29 {
+    width: 4vw;
+}
+.t30 {
+    width: 4vw;
+}
+.t31 {
+    width: 5vw;
+}
+.t32 {
+    width: 6vw;
 }
 
 .record {
@@ -144,4 +247,12 @@
 
 .inv {
     color: white;
+}
+.mt {
+    margin-top: 1vw;
+    padding-left: 0vw;
+}
+.lefts {
+    text-align: left;
+    font-size: 1.5vw;
 }
