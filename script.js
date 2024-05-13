@@ -1,7 +1,3 @@
-let gameWin1 = 0;
-let gameLose1 = 0;
-let gameTie1 = 0;
-
 // Team 1
 function autoFill1() {
   if (gameWin1 + gameLose1 + gameTie1 === 17) {
@@ -1081,24 +1077,10 @@ function fillAllGames99() {
   }
 }
 
-// Checker
-
-fillAllGames99();
-
-function validateInput(input) {
-  input.value = input.value.replace(/^0+/, '');
-
-  if (input.value === '') return;
-
-  if (isNaN(input.value) || parseInt(input.value) > 99) {
-      alert('Please enter a single or double-digit number.');
-      input.value = '';
-  }
-}
  
 // Fill All Games NFC
 
-function autoFillAll() {
+function autoFillAll2() {
     let autoScore = Math.random();
     if (autoScore < 0.45) {
         gameWinAll++;
@@ -1110,13 +1092,13 @@ function autoFillAll() {
 }
 
 function fillAllGames991() {
-    for (let i = 1; i <= 32; i++) {
+    for (let i = 17; i <= 32; i++) {
         let gameWin = 0;
         let gameLose = 0;
         let gameTie = 0;
 
         for (let j = 0; j < 17; j++) {
-            autoFillAll();
+            autoFillAll2();
         }
 
         gameWin = gameWinAll;
@@ -1132,3 +1114,17 @@ function fillAllGames991() {
         document.getElementById(`gameTie${i}`).value = gameTie;
     }
 }
+
+// Checker
+
+function validateInput(input) {
+  input.value = input.value.replace(/^0+/, '');
+
+  if (input.value === '') return;
+
+  if (isNaN(input.value) || parseInt(input.value) > 99) {
+      alert('Please enter a single or double-digit number.');
+      input.value = '';
+  }
+}
+
