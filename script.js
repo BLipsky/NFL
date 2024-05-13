@@ -1081,6 +1081,8 @@ function fillAllGames99() {
   }
 }
 
+// Checker
+
 fillAllGames99();
 
 function validateInput(input) {
@@ -1093,74 +1095,40 @@ function validateInput(input) {
       input.value = '';
   }
 }
+ 
+// Fill All Games NFC
 
 function autoFillAll() {
-  let autoScore = Math.random();
-  if (autoScore < 0.45) {
-    gameWinAll++;
-  } else if (autoScore < 0.9) {
-    gameLoseAll++;
-  } else {
-    gameTieAll++;
-  }
-}
-
-// Team ALL NFC
-function autoFillAll() {
-  let autoScore = Math.random();
-  if (autoScore < 0.45) {
-    gameWinAll++;
-  } else if (autoScore < 0.9) {
-    gameLoseAll++;
-  } else {
-    gameTieAll++;
-  }
+    let autoScore = Math.random();
+    if (autoScore < 0.45) {
+        gameWinAll++;
+    } else if (autoScore < 0.9) {
+        gameLoseAll++;
+    } else {
+        gameTieAll++;
+    }
 }
 
 function fillAllGames991() {
-  for (let i = 1; i <= 32; i++) {
-    let gameWin = 0;
-    let gameLose = 0;
-    let gameTie = 0;
-    
-    for (let j = 0; j < 17; j++) {
-      autoFillAll();
+    for (let i = 1; i <= 32; i++) {
+        let gameWin = 0;
+        let gameLose = 0;
+        let gameTie = 0;
+
+        for (let j = 0; j < 17; j++) {
+            autoFillAll();
+        }
+
+        gameWin = gameWinAll;
+        gameLose = gameLoseAll;
+        gameTie = gameTieAll;
+
+        gameWinAll = 0;
+        gameLoseAll = 0;
+        gameTieAll = 0;
+
+        document.getElementById(`gameWin${i}`).value = gameWin;
+        document.getElementById(`gameLose${i}`).value = gameLose;
+        document.getElementById(`gameTie${i}`).value = gameTie;
     }
-    
-    gameWin = gameWinAll;
-    gameLose = gameLoseAll;
-    gameTie = gameTieAll;
-
-    gameWinAll = 0;
-    gameLoseAll = 0;
-    gameTieAll = 0;
-    
-    document.getElementById(`gameWin${i}`).value = gameWin;
-    document.getElementById(`gameLose${i}`).value = gameLose;
-    document.getElementById(`gameTie${i}`).value = gameTie;
-  }
-}
-
-fillAllGames991();
-
-function validateInput(input) {
-  input.value = input.value.replace(/^0+/, '');
-
-  if (input.value === '') return;
-
-  if (isNaN(input.value) || parseInt(input.value) > 99) {
-      alert('Please enter a single or double-digit number.');
-      input.value = '';
-  }
-}
-
-function autoFillAll() {
-  let autoScore = Math.random();
-  if (autoScore < 0.45) {
-    gameWinAll++;
-  } else if (autoScore < 0.9) {
-    gameLoseAll++;
-  } else {
-    gameTieAll++;
-  }
 }
