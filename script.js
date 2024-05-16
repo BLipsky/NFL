@@ -1,4 +1,3 @@
-// Team 1
 function autoFill1() {
   if (gameWin1 + gameLose1 + gameTie1 === 17) {
     return;
@@ -237,8 +236,8 @@ function fillAllGames8() {
     autoFill8();
   }
   document.getElementById('gameWin8').value = gameWin8;
-  document.getElementById('gameLose8').textContent = gameLose8;
-  document.getElementById('gameTie8').textContent = gameTie8;
+  document.getElementById('gameLose8').value = gameLose8;
+  document.getElementById('gameTie8').value = gameTie8;
 }
 let gameWin9 = 0;
 let gameLose9 = 0;
@@ -257,7 +256,7 @@ function autoFill9() {
   } else {
     gameTie9++;
   }
-  document.getElementById('gameWin9').textContent = gameWin9;
+  document.getElementById('gameWin9').value = gameWin9;
   document.getElementById('gameLose9').value = gameLose9;
   document.getElementById('gameTie9').value = gameTie9;
 }
@@ -1127,4 +1126,3 @@ function validateInput(input) {
       input.value = '';
   }
 }
-
