@@ -1152,3 +1152,19 @@ function validateInput(input) {
       input.value = '';
   }
 }
+
+function resetAllScores() {
+  for (let i = 1; i <= 32; i++) {
+    gameWinAll = 0;
+    gameLoseAll = 0;
+    gameTieAll = 0;
+
+    document.getElementById(`gameWin${i}`).value = 0;
+    document.getElementById(`gameLose${i}`).value = 0;
+    document.getElementById(`gameTie${i}`).value = 0;
+    
+  let gameWin = parseInt(localStorage.getItem('gameWin${i}')) || 0;
+  let gameLose1 = parseInt(localStorage.getItem('gameLose${i}')) || 0;
+  let gameTie1 = parseInt(localStorage.getItem('gameTie1${i}')) || 0;
+  }
+}
