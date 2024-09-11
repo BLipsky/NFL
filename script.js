@@ -1,40 +1,66 @@
 function autoFill1() {
+  let gameWin1 = parseInt(localStorage.getItem('gameWin1')) || 0;
+  let gameLose1 = parseInt(localStorage.getItem('gameLose1')) || 0;
+  let gameTie1 = parseInt(localStorage.getItem('gameTie1')) || 0;
+
   if (gameWin1 + gameLose1 + gameTie1 === 17) {
     return;
   }
+
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin1++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose1++;
   } else {
     gameTie1++;
   }
+
+  localStorage.setItem('gameWin1', gameWin1);
+  localStorage.setItem('gameLose1', gameLose1);
+  localStorage.setItem('gameTie1', gameTie1);
+
   document.getElementById('gameWin1').value = gameWin1;
   document.getElementById('gameLose1').value = gameLose1;
   document.getElementById('gameTie1').value = gameTie1;
 }
+
 function fillAllGames1() {
-  gameWin1 = 0;
-  gameLose1 = 0;
-  gameTie1 = 0;
+  localStorage.setItem('gameWin1', 0);
+  localStorage.setItem('gameLose1', 0);
+  localStorage.setItem('gameTie1', 0);
+
   for (let i = 0; i < 17; i++) {
     autoFill1();
   }
 }
+
+function loadGameValues1() {
+  let gameWin1 = parseInt(localStorage.getItem('gameWin1')) || 0;
+  let gameLose1 = parseInt(localStorage.getItem('gameLose1')) || 0;
+  let gameTie1 = parseInt(localStorage.getItem('gameTie1')) || 0;
+
+  document.getElementById('gameWin1').value = gameWin1;
+  document.getElementById('gameLose1').value = gameLose1;
+  document.getElementById('gameTie1').value = gameTie1;
+}
+
+window.onload = function() {
+  loadGameValues1();
+};
+
 let gameWin2 = 0;
 let gameLose2 = 0;
 let gameTie2 = 0;
-
 // Team 2
 function autoFill2() {
   if (gameWin2 + gameLose2 + gameTie2 === 17) {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin2++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose2++;
   } else {
     gameTie2++;
@@ -61,9 +87,9 @@ function autoFill3() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin3++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose3++;
   } else {
     gameTie3++;
@@ -90,9 +116,9 @@ function autoFill4() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin4++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose4++;
   } else {
     gameTie4++;
@@ -119,9 +145,9 @@ function autoFill5() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin5++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose5++;
   } else {
     gameTie5++;
@@ -152,9 +178,9 @@ function autoFill6() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin6++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose6++;
   } else {
     gameTie6++;
@@ -184,9 +210,9 @@ function autoFill7() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin7++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose7++;
   } else {
     gameTie7++;
@@ -217,9 +243,9 @@ function autoFill8() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin8++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose8++;
   } else {
     gameTie8++;
@@ -249,9 +275,9 @@ function autoFill9() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin9++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose9++;
   } else {
     gameTie9++;
@@ -281,9 +307,9 @@ function autoFill10() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin10++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose10++;
   } else {
     gameTie10++;
@@ -313,9 +339,9 @@ function autoFill11() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin11++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose11++;
   } else {
     gameTie11++;
@@ -345,9 +371,9 @@ function autoFill12() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin12++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose12++;
   } else {
     gameTie12++;
@@ -377,9 +403,9 @@ function autoFill13() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin13++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose13++;
   } else {
     gameTie13++;
@@ -411,7 +437,7 @@ function autoFill14() {
   let autoScore = Math.random();
   if (autoScore < 0.45) {
     gameWin14++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose14++;
   } else {
     gameTie14++;
@@ -441,9 +467,9 @@ function autoFill15() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin15++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose15++;
   } else {
     gameTie15++;
@@ -473,9 +499,9 @@ function autoFill16() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin16++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose16++;
   } else {
     gameTie16++;
@@ -506,9 +532,9 @@ function autoFill17() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin17++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose17++;
   } else {
     gameTie17++;
@@ -539,9 +565,9 @@ function autoFill18() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin18++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose18++;
   } else {
     gameTie18++;
@@ -571,9 +597,9 @@ function autoFill19() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin19++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose19++;
   } else {
     gameTie19++;
@@ -605,9 +631,9 @@ function autoFill20() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin20++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose20++;
   } else {
     gameTie20++;
@@ -639,9 +665,9 @@ function autoFill21() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin21++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose21++;
   } else {
     gameTie21++;
@@ -672,9 +698,9 @@ function autoFill22() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin22++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose22++;
   } else {
     gameTie22++;
@@ -706,9 +732,9 @@ function autoFill23() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin23++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose23++;
   } else {
     gameTie23++;
@@ -740,9 +766,9 @@ function autoFill24() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin24++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose24++;
   } else {
     gameTie24++;
@@ -774,9 +800,9 @@ function autoFill25() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin25++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose25++;
   } else {
     gameTie25++;
@@ -808,9 +834,9 @@ function autoFill26() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin26++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose26++;
   } else {
     gameTie26++;
@@ -842,9 +868,9 @@ function autoFill27() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin27++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose27++;
   } else {
     gameTie27++;
@@ -876,9 +902,9 @@ function autoFill28() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin28++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose28++;
   } else {
     gameTie28++;
@@ -910,9 +936,9 @@ function autoFill29() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin29++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose29++;
   } else {
     gameTie29++;
@@ -944,9 +970,9 @@ function autoFill30() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin30++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose30++;
   } else {
     gameTie30++;
@@ -978,9 +1004,9 @@ function autoFill31() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin31++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose31++;
   } else {
     gameTie31++;
@@ -1012,9 +1038,9 @@ function autoFill32() {
     return;
   }
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWin32++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLose32++;
   } else {
     gameTie32++;
@@ -1043,9 +1069,9 @@ let gameTieAll = 0;
 
 function autoFillAll() {
   let autoScore = Math.random();
-  if (autoScore < 0.45) {
+  if (autoScore < 0.49) {
     gameWinAll++;
-  } else if (autoScore < 0.9) {
+  } else if (autoScore < 0.98) {
     gameLoseAll++;
   } else {
     gameTieAll++;
@@ -1081,9 +1107,9 @@ function fillAllGames99() {
 
 function autoFillAll2() {
     let autoScore = Math.random();
-    if (autoScore < 0.45) {
+    if (autoScore < 0.49) {
         gameWinAll++;
-    } else if (autoScore < 0.9) {
+    } else if (autoScore < 0.98) {
         gameLoseAll++;
     } else {
         gameTieAll++;
